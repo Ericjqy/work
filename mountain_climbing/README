@@ -1,1 +1,32 @@
+Name: 贾清云
+ 
+项目名称：mountain climbing
+
+Included Files:
+  *climbing.cpp
+  *README
+  *Makefile
+
+Running instructions: 
+  可以通过在terminal输入“make”的方式来建立compiler，然后通过输入"./we7_solution"来运行。
+
+Notes and Assumptions:
+  The file climbing.cpp contains two function, get_num_times function is used to find the how much times need 
+for the input burst. It has 7 arguments, the input arguments:heights: record the given ledges' hight in an array.
+length: the total number of ledges.	rest: the time need for resting in ledge.	L: the input burst distance. And
+other argument:	num: used to record the total distance had climbbed. At the end, it represent the total time spend.
+wait: the total rest time. min: the ledge that the people rest and begin his climbing. It has one return value, num
+representing the total time spend. climbing function is used to find the shortest possible burst by binary search.
+It takes the following input arguments: heights: record the given ledges' hight in an array. length: the total 
+number of ledges.	rest: the time need for resting in ledge.	limit: the output burst we want. It has one return
+value, low+1. At the end, high will equal to low, but since we let high be the burst that equal to low, so we let 
+low+1 to get the	correct value.
+  Assumption: 
+    When running the program, you need to first input three number separated by space, first value is number of 
+  ledges. Second input is the time for one rest and the third argument is the limited time that you want to climb
+  the moutain. The following inputs, you need to input the hight of ledges from low to high. And notice that, this
+  program will not indicate the situation that limit is too large or too little and will give an wrong result.
+
+    Acknowledgements:
+    1.Code from Intro lab and course material
 

@@ -26,8 +26,9 @@ to increase the accuracy, recall and precision of the classification. It only ha
 with default value 3.
 
 Assumption:
-  This program assume you input a text with annotated pos-features and pos-label words. The text should have form:
-#<label>     <content>. Ex: "#help      i am not feeling well". The other type of file might cause error. 
+  This program assume you running the program on linex system and input a text with annotated pos-features and 
+pos-label words. The text should have form:#<label>     <content>. Ex: "#help      i am not feeling well". The other 
+type of file might cause error. 
     Acknowledgements:
     
 

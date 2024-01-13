@@ -1,0 +1,37 @@
+Name: Qingyun Jia
+SID: 1724912
+CCID: qjia2
+AnonID: 1000332472
+CMPUT 274, Fall 2022
+ 
+Assessment: Assignment 2--Huffman Coding
+
+Running instructions: 
+    In the dirctory containing the files Makefile, README, bitio.py, compress.py, decompress.py, huffman.py, util.py,
+webserver.py and other files used to test my code. You can use "python3 decompress.py <file.name>" to decompress the 
+indecated file or use "python3 compress.py <file.name>" to compress the indecated file. 
+
+Notes and Assumptions:
+    The file util.py contains five method, which are read_tree(tree_stream), decode_byte(tree, bitreader), decompress(
+compressed, uncompressed), write_tree(tree, tree_stream) and compress(tree, uncompressed, compressed).
+  The method compress requires three argument, a huffman tree(tree), a file stream that you want to read as input(
+uncompress) and a file stream to receive the tree description and coded input data.
+  The method write_tree will receive a huffman tree and write it into file stream "tree_stream".
+  The method decompress will receive two argument, an input compressed file stream and an output uncompressed file 
+stream. The decompress method will read the compressed file stream and based on the tree description to analyze the 
+data and write it in uncompressed form to uncompressed file stream.
+  The method read_tree is used to load the tree description in the "tree_stream" which is a steam and return the 
+huffman tree.
+  The method decode_byte is used to base on the huffman tree, to analyze the indicated binary data.
+Assumption:
+  This program assume you input a proper binary file for decompress or text file for compress. If you didn't indicate
+the file you want to operate, the program will stop.
+    Acknowledgements:
+    1. Refered the code in lecture slide
+    2. code of method decode_byte and decompress received help from my friend Kevin Huang
+# NOTE: Do NOT changes lines 1 to 4, *except* to fill in the "xyz" information
+
+# Fill in with any other information required in the
+#	Code Submissions Guideline (CSG).
+# If there is a difference between the format above and the CSG,
+#	then please use the format above.
